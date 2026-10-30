@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencia de Doctorado en España 2026 | Machuca & Abogados</title>
+    <meta name="description" content="Asesoramiento legal para la nueva Residencia de Investigación para estudiantes de Doctorado en España según el Criterio de Gestión 2/2026. Machuca & Abogados.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#093D51',
+                            navy: '#052937',
+                            gold: '#BE986E',
+                            goldHover: '#B88A16',
+                            lightGold: '#F4ECE1',
+                            bgLight: '#F8FAF9',
+                            text: '#1E293B',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['Georgia', 'Cambria', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;
+            background-color: #F8FAF9;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #BE986E 0%, #B88A16 100%);
+        }
+        
+        .dark-gradient {
+            background: linear-gradient(135deg, #093D51 0%, #052937 100%);
+        }
+
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #BE986E 0%, #B88A16 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(190, 152, 110, 0.2);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8FAF9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #093D51;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #BE986E;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-dark text-white text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-brand-gold/20 flex justify-center items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span><strong>Criterio de Gestión 2/2026 (11 de Agosto):</strong> Nuevo marco normativo de Residencia para Doctorandos en España</span>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Image -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="machuca_logo_transparente.png" alt="Machuca & Abogados Logo" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/240x60/093D51/BE986E?text=MACHUCA+%26+ABOGADOS';">
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-700">
+                <a href="#inicio" class="hover:text-brand-gold transition-colors">Inicio</a>
+                <a href="#cambio-2026" class="hover:text-brand-gold transition-colors">Cambio 2026</a>
+                <a href="#requisitos" class="hover:text-brand-gold transition-colors">Requisitos</a>
+                <a href="#paso-a-paso" class="hover:text-brand-gold transition-colors">Paso a Paso</a>
+                <a href="#beneficios" class="hover:text-brand-gold transition-colors">Nacionalidad y Familia</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+                <a href="#contacto" class="hover:text-brand-gold transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="hidden sm:flex items-center space-x-3">
+                <a href="#contacto" class="gold-gradient text-white hover:opacity-95 text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg shadow-md transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span>Solicitar Asesoramiento</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" aria-label="Abrir menú" class="lg:hidden text-brand-dark p-2 rounded-lg hover:bg-gray-100 focus:outline-none">
+                <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Inicio</a>
+            <a href="#cambio-2026" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Cambio Normativo 2026</a>
+            <a href="#requisitos" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Requisitos Requeridos</a>
+            <a href="#paso-a-paso" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Procedimiento Paso a Paso</a>
+            <a href="#beneficios" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Nacionalidad y Familia</a>
+            <a href="#faq" class="block py-2 text-brand-dark hover:text-brand-gold font-medium border-b border-gray-100">Preguntas Frecuentes</a>
+            <a href="#contacto" class="block py-2 text-brand-dark hover:text-brand-gold font-medium">Contacto</a>
+            <a href="#contacto" class="block w-full text-center gold-gradient text-white font-semibold py-3 rounded-lg mt-4 shadow">
+                Solicitar Asesoramiento Jurídico
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative bg-brand-dark text-white overflow-hidden py-16 lg:py-24"
+        style="background-image: linear-gradient(rgba(5, 41, 55, 0.78), rgba(5, 41, 55, 0.78)), url('Gemini_Generated_Image_os0n8aos0n8aos0n.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <!-- Background Pattern / Glows -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#BE986E_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs font-semibold tracking-wide uppercase">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        Especialistas en Extranjería y Movilidad Investigadora
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-extrabold leading-tight text-white">
+                        Doctorado en España en 2026: <br>
+                        <span class="gold-text-gradient">Nueva Residencia para Estudiantes e Investigadores</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        Con el nuevo <strong>Criterio de Gestión 2/2026 (11 de agosto de 2026)</strong> de la Dirección General de Gestión Migratoria, los doctorandos extranjeros tramitan la <strong class="text-white">Residencia para Investigación Nacional (Art. 72 Ley 14/2013)</strong> en lugar de la estancia por estudios ordinaria.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="gold-gradient text-white font-bold px-7 py-4 rounded-xl shadow-lg hover:shadow-xl hover:opacity-95 transition text-center flex items-center justify-center gap-2">
+                            <span>Solicitar Estudio Personalizado</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <a href="https://wa.me/?text=Hola%20Machuca%20%26%20Abogados,%20quisiera%20consultar%20sobre%20la%20Residencia%20para%20Doctorado%202026" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-4 rounded-xl transition text-center flex items-center justify-center gap-2 shadow-md">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            <span>WhatsApp Directo</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center sm:text-left">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-gold">20 Días</div>
+                            <div class="text-xs text-slate-400">Plazo UGE-CE (Silencio Positivo)</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-gold">Hasta 3 Años</div>
+                            <div class="text-xs text-slate-400">Vigencia inicial con renovación</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-gold">100% Legal</div>
+                            <div class="text-xs text-slate-400">Computa para Nacionalidad</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Feature Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 text-brand-dark shadow-2xl relative overflow-hidden border-2 border-brand-gold/30">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-brand-gold/10 rounded-bl-full pointer-events-none"></div>
+                        <h3 class="font-serif font-bold text-xl text-brand-dark mb-4 flex items-center gap-2">
+                            <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Claves del Cambio Normativo 2026
+                        </h3>
+                        
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-brand-dark">Cambio de régimen migratorio:</strong> Pasa de estancia por estudios a Autorización de Residencia bajo la Ley 14/2013 (Ley de Emprendedores).
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-brand-dark">Tramitación centralizada:</strong> Se resuelve directamente en la Unidad de Grandes Empresas y Colectivos Estratégicos (UGE-CE).
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-brand-dark">Sin necesidad de contrato:</strong> Aplica a doctorandos con o sin contrato de trabajo con la universidad.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-brand-dark">Beneficio Iberoamericano:</strong> Permite acumular tiempo para solicitar la nacionalidad en solo 2 años.
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 p-4 rounded-xl bg-brand-lightGold/60 border border-brand-gold/30 flex items-center justify-between">
+                            <span class="text-xs text-brand-dark font-medium">¿Ya estás en España estudiando?</span>
+                            <a href="#contacto" class="text-xs font-bold text-brand-dark underline hover:text-brand-gold transition">Analizar mi caso →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WHAT HAS CHANGED IN 2026? -->
+    <section id="cambio-2026" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Novedad Administrativa</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-dark mt-2">¿Qué ha cambiado para los doctorandos en 2026?</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+                <p class="text-brand-muted text-base sm:text-lg">
+                    La Dirección General de Gestión Migratoria unifica el criterio atendiendo a la verdadera naturaleza investigadora de los programas oficiales de doctorado.
+                </p>
+            </div>
+
+            <!-- Detail Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-brand-bgLight p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 relative group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-gold flex items-center justify-center mb-6 font-bold text-xl group-hover:scale-110 transition-transform">
+                        01
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-dark mb-3">Criterio de Gestión 2/2026</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                        Publicado el <strong>11 de agosto de 2026</strong>, establece explícitamente que los estudiantes de doctorado quedan incluidos dentro del ámbito de la residencia para investigación regulada en el <strong>Artículo 72 de la Ley 14/2013</strong> (Ley de Emprendedores).
+                    </p>
+                    <span class="inline-block text-xs font-semibold text-brand-dark bg-brand-lightGold px-3 py-1 rounded-full">Marco Legal Ley 14/2013</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brand-bgLight p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 relative group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-gold flex items-center justify-center mb-6 font-bold text-xl group-hover:scale-110 transition-transform">
+                        02
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-dark mb-3">Tramitación ante UGE-CE</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                        Se abandona la vía ordinaria de estancia por estudios en las Oficinas de Extranjería regionales. Las solicitudes se tramitan directamente ante la <strong>Unidad de Grandes Empresas y Colectivos Estratégicos (UGE-CE)</strong> mediante vía electrónica.
+                    </p>
+                    <span class="inline-block text-xs font-semibold text-brand-dark bg-brand-lightGold px-3 py-1 rounded-full">Procesamiento Centralizado</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brand-bgLight p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 relative group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-gold flex items-center justify-center mb-6 font-bold text-xl group-hover:scale-110 transition-transform">
+                        03
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-brand-dark mb-3">Dos Modalidades Distintas</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                        La ley distingue entre la <strong>Residencia para Investigación Nacional</strong> (doctorandos matriculados en RUCT con o sin contrato) y la <strong>Residencia para Investigación UE</strong> (vinculados mediante contrato formal o convenio de acogida).
+                    </p>
+                    <span class="inline-block text-xs font-semibold text-brand-dark bg-brand-lightGold px-3 py-1 rounded-full">Evaluación de Perfil</span>
+                </div>
+
+            </div>
+
+            <!-- Applicable Countries Banner -->
+            <div class="mt-12 bg-brand-dark rounded-2xl p-8 text-white relative overflow-hidden shadow-lg">
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-4">
+                        <h3 class="font-serif font-bold text-2xl text-brand-gold mb-2">¿A quién aplica este régimen?</h3>
+                        <p class="text-sm text-slate-300">A todos los ciudadanos de países no pertenecientes a la Unión Europea, Espacio Económico Europeo o Suiza.</p>
+                    </div>
+                    <div class="lg:col-span-8 flex flex-wrap gap-2">
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇨🇴 Colombia</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇻🇪 Venezuela</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇵🇪 Perú</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇪🇨 Ecuador</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇧🇴 Bolivia</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇨🇺 Cuba</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇭🇳 Honduras</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇩🇴 Rep. Dominicana</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇲🇦 Marruecos</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇸🇳 Senegal</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇨🇳 China</span>
+                        <span class="bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200">🇮🇳 India</span>
+                        <span class="bg-brand-gold text-brand-dark px-3 py-1.5 rounded-lg text-xs font-bold">+ Resto de Iberoamérica y terceros países</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: CONTRACT VS NO CONTRACT HIGHLIGHT -->
+    <section class="py-16 bg-brand-bgLight border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-gold/30 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        ACLARACIÓN CLAVE DE LA ADMINISTRACIÓN
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold text-brand-dark">
+                        ¿Puedo solicitar esta residencia si NO tengo contrato de trabajo con la universidad?
+                    </h2>
+                    <p class="text-brand-text text-base leading-relaxed">
+                        <strong class="text-emerald-700 text-lg">¡SÍ, ES TOTALMENTE POSIBLE!</strong> No es obligatorio contar con un contrato laboral de investigación ni una beca oficial de la universidad para solicitar la Residencia para Investigación Nacional.
+                    </p>
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        La Administración contempla de forma explícita el supuesto de doctorandos autofinanciados o con recursos propios. En estos casos, la clave jurídica reside en acreditar debidamente la matrícula oficial (RUCT), contar con medios económicos suficientes y disponer de un seguro de salud de cobertura completa.
+                    </p>
+                </div>
+
+                <!-- Interactive Financial Calculator Widget -->
+                <div class="lg:col-span-5 bg-brand-dark text-white rounded-2xl p-6 shadow-lg border border-brand-gold/40">
+                    <h3 class="font-serif font-bold text-lg text-brand-gold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        Simulador de Criterio Económico
+                    </h3>
+                    <p class="text-xs text-slate-300 mb-4">Selecciona tu modalidad para conocer la referencia de medios económicos mínimos (según la guía ministerial):</p>
+                    
+                    <div class="space-y-3 text-xs">
+                        <label class="block cursor-pointer">
+                            <input type="radio" name="calc-option" value="solo" checked class="text-brand-gold focus:ring-brand-gold" onchange="updateCalc('solo')">
+                            <span class="ml-2 font-medium">Solicitante Individual (Sin Contrato)</span>
+                        </label>
+                        <label class="block cursor-pointer">
+                            <input type="radio" name="calc-option" value="family" class="text-brand-gold focus:ring-brand-gold" onchange="updateCalc('family')">
+                            <span class="ml-2 font-medium">Solicitante + Acompañamiento Familiar</span>
+                        </label>
+                    </div>
+
+                    <div id="calc-result" class="mt-5 p-4 rounded-xl bg-white/10 border border-white/20 text-center">
+                        <div class="text-xs uppercase tracking-wider text-brand-gold font-semibold">Exigencia Económica Estimada</div>
+                        <div class="text-2xl font-extrabold text-white my-1" id="calc-amount">50% del SMI Anual</div>
+                        <div class="text-[11px] text-slate-300" id="calc-desc">Acreditación mediante fondos propios, extractos bancarios o becas externas.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: MANDATORY REQUIREMENTS -->
+    <section id="requisitos" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Documentación y Condiciones</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-dark mt-2">Los 6 Requisitos Obligatorios</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+                <p class="text-brand-muted text-base">
+                    Aunque cada expediente debe examinarse individualmente según tu situación, estos son los pilares documentales exigidos por la UGE-CE:
+                </p>
+            </div>
+
+            <!-- Grid of 6 Requirements -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Req 1 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">1</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Admisión en Doctorado Oficial</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Documentación expedida por la universidad española acreditando la admisión y el pago de derechos de matrícula. El programa debe constar en el <strong>RUCT</strong> con nivel de Doctor.
+                    </p>
+                </div>
+
+                <!-- Req 2 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">2</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Pasaporte en Vigor</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Pasaporte completo y vigente del solicitante (y de sus familiares si aplica), conforme a las instrucciones específicas de la Unidad de Grandes Empresas (UGE-CE).
+                    </p>
+                </div>
+
+                <!-- Req 3 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">3</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Medios Económicos Suficientes</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Sin contrato: referencia mínima equivalente al <strong>50% del SMI en cómputo anual</strong>. Con familia desplazada: la referencia se incrementa hasta el <strong>100% del SMI</strong>.
+                    </p>
+                </div>
+
+                <!-- Req 4 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">4</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Seguro Médico Adecuado</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Seguro privado contratado con entidad autorizada en España, con cobertura completa equivalente al Sistema Nacional de Salud. <strong>Sin copagos, ni carencias, ni seguros de viaje.</strong>
+                    </p>
+                </div>
+
+                <!-- Req 5 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">5</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Ausencia de Antecedentes Penales</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Certificado de penales de los países de residencia de los últimos 2 años (apostillados/legalizados y traducidos) + Declaración responsable de los últimos 5 años.
+                    </p>
+                </div>
+
+                <!-- Req 6 -->
+                <div class="bg-brand-bgLight p-6 rounded-2xl border border-gray-200 hover:border-brand-gold transition duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-brand-lightGold text-brand-dark flex items-center justify-center font-bold mb-4">6</div>
+                    <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Tasa Administrativa</h3>
+                    <p class="text-brand-muted text-xs leading-relaxed">
+                        Abono de la tasa correspondiente a las autorizaciones de movilidad internacional reguladas por la Ley 14/2013 mediante el <strong>Modelo 790, Código 038</strong>.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Disclaimer Notice -->
+            <div class="mt-8 p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-3">
+                <svg class="w-5 h-5 flex-shrink-0 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                <span><strong>Nota Importante:</strong> La lista definitiva de documentos puede variar en función de si el estudiante reside actualmente en España o en el extranjero, la existencia de contrato laboral o beca y el historial previo.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: STEP-BY-STEP PROCEDURE TIMELINE -->
+    <section id="paso-a-paso" class="py-16 sm:py-24 bg-brand-bgLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Guía de Solicitud</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-dark mt-2">Procedimiento Paso a Paso</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+                <p class="text-brand-muted text-base">
+                    Así es como tramitamos tu expediente con la máxima seguridad jurídica desde el inicio hasta la concesión de tu TIE.
+                </p>
+            </div>
+
+            <!-- Timeline Grid -->
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-brand-gold/30"></div>
+
+                <div class="space-y-12">
+                    
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 1</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Obtener la Admisión al Doctorado</h3>
+                                <p class="text-brand-muted text-xs">Conseguir la documentación oficial de admisión o matrícula expedida por la universidad española en un programa verificado en el RUCT.</p>
+                            </div>
+                        </div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">1</div>
+                        <div class="flex-1 md:pl-12 w-full hidden md:block"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full hidden md:block"></div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">2</div>
+                        <div class="flex-1 md:pl-12 w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 2</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Comprobar la Autorización Correspondiente</h3>
+                                <p class="text-brand-muted text-xs">Analizar la situación individual (sin contrato, investigador contratado o becado) para seleccionar la vía y formularios adecuados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 3</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Preparación Rigurosa del Expediente</h3>
+                                <p class="text-brand-muted text-xs">Reunir y auditar legalmente los documentos académicos, económicos, sanitarios y penales debidamente legalizados/apostillados.</p>
+                            </div>
+                        </div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">3</div>
+                        <div class="flex-1 md:pl-12 w-full hidden md:block"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full hidden md:block"></div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">4</div>
+                        <div class="flex-1 md:pl-12 w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 4</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Presentación Electrónica ante UGE-CE</h3>
+                                <p class="text-brand-muted text-xs">Presentación formal y telemática en la plataforma habilitada de la Unidad de Grandes Empresas (desde España o coordinando visado consular si está en origen).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition border-l-4 border-l-brand-gold">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 5</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Resolución Administrativa (20 Días Hábiles)</h3>
+                                <p class="text-brand-muted text-xs">Plazo legal de resolución máxima de 20 días hábiles con aplicación de silencio administrativo positivo bajo los términos de la Ley 14/2013.</p>
+                            </div>
+                        </div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">5</div>
+                        <div class="flex-1 md:pl-12 w-full hidden md:block"></div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 md:text-right w-full hidden md:block"></div>
+                        <div class="my-4 md:my-0 w-10 h-10 rounded-full gold-gradient text-white font-bold flex items-center justify-center shadow-md z-10">6</div>
+                        <div class="flex-1 md:pl-12 w-full">
+                            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                                <span class="text-xs font-bold text-brand-gold uppercase">Paso 6</span>
+                                <h3 class="font-serif font-bold text-lg text-brand-dark mb-2">Visado Consular y Tarjeta TIE</h3>
+                                <p class="text-brand-muted text-xs">Gestión del visado correspondiente en el consulado de origen (si aplica) y posterior toma de huellas para la Tarjeta de Identidad de Extranjero (TIE).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: KEY BENEFITS (NATIONALITY & FAMILY) -->
+    <section id="beneficios" class="py-16 sm:py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Ventajas Estratégicas</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold mt-2">Nacionalidad Española y Proyecto Familiar</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-300 text-base">
+                    A diferencia del antiguo régimen de estancia por estudios, esta autorización es una <strong class="text-white">Residencia Legal en firme</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Benefit Card 1: Nationality -->
+                <div class="glass-card rounded-3xl p-8 text-brand-dark relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold mb-4">
+                            ⭐ Beneficio Estrella
+                        </div>
+                        <h3 class="font-serif font-bold text-2xl text-brand-dark mb-4">
+                            ¡SÍ computa para solicitar la Nacionalidad Española!
+                        </h3>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                            Mientras que la <em>estancia por estudios</em> sólo se consideraba tiempo de "estancia" (no computable para la residencia continuada), la <strong>Residencia para Investigación</strong> otorga estatus de residencia legal a todos los efectos.
+                        </p>
+                        <div class="bg-brand-lightGold/60 p-4 rounded-xl border border-brand-gold/40 text-xs space-y-2 mb-6">
+                            <div class="font-bold text-brand-dark text-sm">Plazos Reducidos de Nacionalidad (Art. 22 Código Civil):</div>
+                            <p><strong>Nacionales de países Iberoamericanos, Filipinas, Guinea Ecuatorial o Portugal:</strong> Solo necesitan <strong>2 AÑOS</strong> de residencia legal continuada.</p>
+                            <p class="text-gray-600">Regla general para otros países: 10 años de residencia legal continuada.</p>
+                        </div>
+                    </div>
+                    <div class="text-xs text-brand-muted italic border-t border-gray-200 pt-3">
+                        * Un doctorando iberoamericano puede solicitar la nacionalidad española tras 2 años de doctorado con esta residencia.
+                    </div>
+                </div>
+
+                <!-- Benefit Card 2: Family & Work -->
+                <div class="glass-card rounded-3xl p-8 text-brand-dark relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-900 text-xs font-bold mb-4">
+                            👨‍👩‍👧‍👦 Acompañamiento Familiar
+                        </div>
+                        <h3 class="font-serif font-bold text-2xl text-brand-dark mb-4">
+                            Reagrupación Simultánea y Permiso de Trabajo
+                        </h3>
+                        <p class="text-brand-muted text-sm leading-relaxed mb-4">
+                            La Ley 14/2013 permite que el titular venga acompañado o incorpore posteriormente a sus familiares directos de manera ágil.
+                        </p>
+                        <ul class="space-y-3 text-xs text-brand-dark mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span><strong>Familiares incluidos:</strong> Cónyuge o pareja de hecho, e hijos menores o dependientes.</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span><strong>Derecho a Trabajar:</strong> La autorización concedida a los familiares incluye permiso implícito para trabajar en España.</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span><strong>Duración:</strong> Otorgada por hasta 3 años o la duración del vínculo académico, renovable.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-xs text-brand-muted italic border-t border-gray-200 pt-3">
+                        * Tramitación conjunta o diferida en función de la estrategia de viaje del grupo familiar.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section id="faq" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Resuelve tus dudas</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-dark mt-2">Preguntas Frecuentes y Casos Especiales</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto my-4 rounded-full"></div>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4">
+                
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden bg-brand-bgLight transition">
+                    <button class="w-full p-6 text-left font-serif font-bold text-brand-dark text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq('faq-1')">
+                        <span>¿Qué sucede si ya estoy en España con una estancia por estudios?</span>
+                        <svg id="arrow-faq-1" class="w-5 h-5 text-brand-gold transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="faq-1" class="hidden px-6 pb-6 text-brand-muted text-sm leading-relaxed border-t border-gray-200/60 pt-4">
+                        Es uno de los supuestos que requiere mayor atención técnica. No debes asumir que tu autorización anterior queda automáticamente anulada. Se debe analizar la vigencia de tu tarjeta actual, la fecha de matriculación en el doctorado y el momento exacto para presentar la modificación o nueva solicitud ante la UGE-CE sin generar vacíos de legalidad.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden bg-brand-bgLight transition">
+                    <button class="w-full p-6 text-left font-serif font-bold text-brand-dark text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq('faq-2')">
+                        <span>¿Puedo trabajar en España fuera de la universidad mientras realizo el doctorado?</span>
+                        <svg id="arrow-faq-2" class="w-5 h-5 text-brand-gold transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="faq-2" class="hidden px-6 pb-6 text-brand-muted text-sm leading-relaxed border-t border-gray-200/60 pt-4">
+                        La autorización de residencia para investigación está ligada prioritariamente a la actividad investigadora o de formación. Si deseas ejercer un empleo distinto y ajeno al proyecto de doctorado, la normativa exige comprobar la compatibilidad y verificar si se requieren trámites complementarios de autorización.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden bg-brand-bgLight transition">
+                    <button class="w-full p-6 text-left font-serif font-bold text-brand-dark text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq('faq-3')">
+                        <span>¿Por qué es clave contar con un abogado especialista de Machuca & Abogados?</span>
+                        <svg id="arrow-faq-3" class="w-5 h-5 text-brand-gold transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="faq-3" class="hidden px-6 pb-6 text-brand-muted text-sm leading-relaxed border-t border-gray-200/60 pt-4">
+                        Una solicitud mal planteada o con documentación incompleta ante la UGE-CE genera requerimientos que paralizan el proceso o resoluciones desfavorables difícilmente subsanables. En Machuca & Abogados realizamos el filtro previo, auditamos la suficiencia económica, validamos la póliza de seguro y coordinamos la vía consular o telemática para garantizar el éxito de tu residencia.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden bg-brand-bgLight transition">
+                    <button class="w-full p-6 text-left font-serif font-bold text-brand-dark text-lg flex justify-between items-center focus:outline-none" onclick="toggleFaq('faq-4')">
+                        <span>¿Cuánto tiempo de validez se concede inicialmente?</span>
+                        <svg id="arrow-faq-4" class="w-5 h-5 text-brand-gold transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="faq-4" class="hidden px-6 pb-6 text-brand-muted text-sm leading-relaxed border-t border-gray-200/60 pt-4">
+                        La Ley 14/2013 prevé con carácter general una vigencia inicial de <strong>hasta 3 años</strong> (o la duración determinada del programa si fuere menor), siendo renovable mientras se mantengan las condiciones académicas e investigadoras.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & INTAKE FORM SECTION -->
+    <section id="contacto" class="py-16 sm:py-24 bg-brand-bgLight border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Sidebar -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Contacto Directo</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-brand-dark mt-2">Machuca & Abogados</h2>
+                        <p class="text-brand-gold font-medium text-sm mt-1">Despacho Especializado en Derecho de Extranjería y Nacionalidad Española</p>
+                    </div>
+
+                    <p class="text-brand-muted text-sm leading-relaxed">
+                        ¿Has sido admitido en un doctorado en España? ¿Ya estás estudiando y necesitas adaptar tu estatus al nuevo criterio de 2026? Recibe un estudio jurídico personalizado de tu expediente.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-dark text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Oficina Central</h4>
+                                <p class="text-brand-muted text-xs">Atención a clientes en España y tramitación internacional.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-dark text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Consultas Jurídicas</h4>
+                                <p class="text-brand-muted text-xs">Evaluación telemática de expediente y representación ante UGE-CE.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-dark text-brand-gold flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm">Garantía de Respuesta</h4>
+                                <p class="text-brand-muted text-xs">Respuesta prioritaria para solicitudes de doctorado en 2026.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-brand-lightGold/60 border border-brand-gold/30">
+                        <div class="text-xs font-bold text-brand-dark mb-1">📞 Contacto Directo Telefónico / WhatsApp</div>
+                        <p class="text-xs text-brand-muted mb-3">Solicita cita previa presencial u online para revisar la documentación de tu universidad.</p>
+                        <a href="https://wa.me/?text=Hola%20Machuca%20%26%20Abogados,%20quisiera%20recibir%20asesoramiento%20para%20mi%20residencia%20de%20Doctorado" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-4 py-2 rounded-lg transition">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            <span>Escribir por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                        <h3 class="font-serif font-bold text-2xl text-brand-dark mb-2">Solicita Asesoramiento Personalizado</h3>
+                        <p class="text-xs text-brand-muted mb-6">Completa el formulario para que nuestros abogados examinen tu perfil de doctorando.</p>
+
+                        <!-- Notification Toast -->
+                        <div id="form-feedback" class="hidden mb-6 p-4 rounded-xl text-xs font-medium"></div>
+
+                        <form id="doctorado-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">Nombre y Apellidos *</label>
+                                    <input type="text" required placeholder="Ej. Carlos Mendoza" class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">Correo Electrónico *</label>
+                                    <input type="email" required placeholder="ejemplo@correo.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">Teléfono / WhatsApp *</label>
+                                    <input type="tel" required placeholder="+57 300 000 0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">País de Origen / Nacionalidad *</label>
+                                    <input type="text" required placeholder="Ej. Colombia, Perú, Venezuela..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">Universidad / Programa de Doctorado</label>
+                                    <input type="text" placeholder="Ej. Universidad Complutense, UAB..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-brand-dark mb-1">Situación Actual *</label>
+                                    <select required class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none bg-white">
+                                        <option value="">Selecciona tu estado</option>
+                                        <option value="origen">En país de origen (Pendiente de viajar)</option>
+                                        <option value="estudio-espana">En España con Estancia por Estudios</option>
+                                        <option value="matriculado">Ya matriculado en Doctorado</option>
+                                        <option value="contrato">Tengo o tendré Contrato de Investigación</option>
+                                        <option value="sin-contrato">Sin Contrato (Autofinanciado)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-brand-dark mb-1">Detalles o Consulta Específica</label>
+                                <textarea rows="3" placeholder="Indica fechas estimadas de inicio de estudios, si viajas con familia o cualquier particularidad..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-xs focus:ring-2 focus:ring-brand-gold focus:border-transparent outline-none"></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-2 pt-2">
+                                <input type="checkbox" required id="privacy" class="mt-1 text-brand-gold focus:ring-brand-gold rounded">
+                                <label for="privacy" class="text-[11px] text-brand-muted">
+                                    Acepto el tratamiento de mis datos para recibir la consulta jurídica de Machuca & Abogados conforme a la política de privacidad.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full gold-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition flex items-center justify-center gap-2 text-sm mt-4">
+                                <span>Enviar Consulta Jurídica</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-white border-t border-brand-gold/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                
+                <div>
+                    <!-- Footer Logo in white/light card container for optimal contrast -->
+                    <div class="inline-block bg-white/10 backdrop-blur-sm border border-white/15 p-2.5 rounded-xl mb-3">
+                        <img src="machuca_logo_transparente.png" alt="Machuca & Abogados Logo" class="h-10 sm:h-12 w-auto object-contain filter brightness-110 drop-shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/240x60/093D51/BE986E?text=MACHUCA+%26+ABOGADOS';">
+                    </div>
+                    <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold">Derecho de Extranjería y Nacionalidad Española</div>
+                    <p class="text-xs text-slate-400 mt-2 max-w-md">Especialistas en la gestión de autorizaciones de residencia para investigadores y estudiantes de doctorado bajo la Ley 14/2013 y Criterio de Gestión 2/2026.</p>
+                </div>
+
+                <div class="text-xs text-slate-400 space-y-2">
+                    <p>© 2026 Machuca & Abogados. Todos los derechos reservados.</p>
+                    <div class="flex justify-center md:justify-end gap-4 text-slate-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING PROMINENT WHATSAPP BUTTON (ESTÁTICO, SIN PARPADEO/PULSO) -->
+    <div class="fixed bottom-5 right-5 z-50 flex items-center gap-3">
+        <!-- Main WhatsApp Action Button (Static, No Ping/Pulse) -->
+        <a href="https://wa.me/?text=Hola%20Machuca%20%26%20Abogados,%20quisiera%20recibir%20asesoramiento%20para%20mi%20residencia%20de%20Doctorado" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp con Machuca & Abogados" class="bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-xl transition-all transform hover:scale-105 flex items-center justify-center border-2 border-white">
+            <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            });
+        });
+
+        // FAQ Toggle Accordion
+        function toggleFaq(id) {
+            const content = document.getElementById(id);
+            const arrow = document.getElementById('arrow-' + id);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // Financial Calculator Toggle
+        function updateCalc(type) {
+            const amountEl = document.getElementById('calc-amount');
+            const descEl = document.getElementById('calc-desc');
+
+            if (type === 'solo') {
+                amountEl.textContent = '50% del SMI Anual';
+                descEl.textContent = 'Acreditación mediante fondos propios, extractos bancarios o becas externas del estudiante.';
+            } else {
+                amountEl.textContent = '100% del SMI Anual + Incrementos';
+                descEl.textContent = 'Acreditación requerida al desplazarse con cónyuge/hijos conforme a la guía ministerial.';
+            }
+        }
+
+        // Intake Form Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            
+            feedback.className = "mb-6 p-4 rounded-xl text-xs font-medium bg-emerald-100 text-emerald-800 border border-emerald-300";
+            feedback.innerHTML = "<strong>¡Solicitud enviada con éxito!</strong> Un abogado especialista en Derecho de Extranjería de Machuca & Abogados analizará tus datos y se pondrá en contacto a la brevedad.";
+            feedback.classList.remove('hidden');
+
+            document.getElementById('doctorado-form').reset();
+
+            // Smooth scroll to feedback
+            feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+
+</body>
+</html>
